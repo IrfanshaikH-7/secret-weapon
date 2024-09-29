@@ -115,7 +115,7 @@ id={'-'}
           "We optimize different combinations of parameters within a trading strategy to find the most effective settings.",
           "Traders can still iterate through different parameter values, observe the impact on strategy performance, and manually select the settings that yield the best results.",
         ]}
-        image={"/product/optimisation.png"}
+        image={"/product/optimization.png"}
         button={"Read More"}
       />
 
