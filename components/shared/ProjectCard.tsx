@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/lib/variants'
 import { Button } from '../ui/button'
+import { useRouter } from 'next/router'
 type contentSectionType = {
     id: string
     imageDesc?:string
@@ -24,6 +25,7 @@ export default function ProjectCard({
     content,
     listItems
 }: contentSectionType) {
+    const router = useRouter()
     const isArray = Array.isArray(descriptions);
     const descriptionList = isArray ? descriptions : [descriptions];
     return (
@@ -65,7 +67,7 @@ export default function ProjectCard({
                         }
 
 
-                        <Button>
+                        <Button onClick={() => router.push(`/contact`)}>
                             Get Quotes
                         </Button>
 
@@ -133,7 +135,7 @@ export default function ProjectCard({
                             ))
                         }
 
-                        <Button>
+                        <Button onClick={() => router.push(`/contact`)}>
                             Get Quotes
                         </Button>
 
