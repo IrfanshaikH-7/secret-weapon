@@ -16,7 +16,7 @@ export default function CallToAction() {
 <button
   className="overflow-hidden  w-36 py-2 px-4 h-11 mt-4 bg-black text-white border rounded-xl text-xl font-bold cursor-pointer relative z-10 group"
 >
-  Connect
+  Start now
   <span
     className="absolute w-40 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"
   ></span>
@@ -27,8 +27,8 @@ export default function CallToAction() {
     className="absolute w-40 h-32 -top-8 -left-2 bg-yellow-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"
   ></span>
   <span
-    className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-12 z-10"
-    >Click!</span>
+    className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-8 z-10"
+    >Connect</span>
 </button>
 
       </div>

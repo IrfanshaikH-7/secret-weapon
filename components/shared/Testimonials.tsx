@@ -62,9 +62,9 @@ export function Testimonials() {
     <main className="h-full w-full  ">
     <div className="text-xl w-fit mx-auto  relative md:text-4xl font-[1000] bg-[url('/secret-3.png')] text-center bg-clip-text mb-4 text-transparent">
 
-    <div className='h-[2.5px] w-24 absolute -bottom-1 -right-12 rounded-full bg-slate-600'/>
-        <span>Our products</span>
-        <div className='h-[2px] w-24 absolute -top-1 -left-12 rounded-full bg-slate-600'/>
+    <div className='h-[2px] w-24 absolute -bottom-0 -right-12 rounded-full bg-slate-600'/>
+        <div className="py-2">Our Satisfied customers</div>
+        <div className='h-[2px] w-24 absolute top-0 -left-12 rounded-full bg-slate-600'/>
     </div>
 
     <Carousel
