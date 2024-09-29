@@ -29,17 +29,23 @@ export default function Portfolio() {
 
   const filteredProjects = useMemo(() => {
     if (tab === 'all') {
-      // Combine all projects from all tabs when "all" is selected
       const allProjects = Object.values(tabsData).flat();
       return allProjects.filter(project =>
         project.projectname.toLowerCase().includes(filter.toLowerCase())
       );
     } else {
-      // Filter projects based on the selected tab
-      const tabProjects = tabsData[tab] || []; // Use an empty array if the tab doesn't exist
-      return tabProjects.filter(project =>
-        filter === "" || project.projectname.toLowerCase().includes(filter.toLowerCase())
-      );
+      const tabProjects = tabsData[tab] ; 
+      if(!tabProjects){
+        const allProjects = Object.values(tabsData).flat();
+        return allProjects.filter(project =>
+          project.projectname.toLowerCase().includes(filter.toLowerCase())
+        );
+      } else {
+        return tabProjects.filter(project =>
+          filter === "" || project.projectname.toLowerCase().includes(filter.toLowerCase())
+        );
+      }
+     
     }
   }, [filter, tab, tabsData]);
 console.log(filter,filteredProjects )
