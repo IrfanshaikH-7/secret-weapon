@@ -141,6 +141,55 @@ export type Project = {
           ]
         }
       ],
+      
+      "python" : [
+       
+        {
+          projectname: "Dashboard",
+          description: "A personalized dashboard offers traders an efficient means to monitor essential metrics and make informed decisions. We specialize in crafting bespoke dashboards, tailored to your specific needs. Our solutions enhance your trading experience by providing a personalized and efficient toolset to track key indicators and make timely decisions that align with your trading strategy.",
+          images: [
+            "/portfolio/temp.jpg",
+            "/portfolio/port-multiple-target.jpg",
+            "trailing-stoploss.jpg"
+          ]
+        }
+      ],
+      "metra-trader" : [
+       
+        {
+          projectname: "Tradings",
+          description: "Pair trading is a market-neutral strategy profiting from the relative performance of two correlated assets. As Pine Script service providers, we offer customized solutions for implementing pair trading strategies. We ensure  integration of  techniques, allowing traders to capitalize on asset correlations while minimizing exposure to market. Contact us to explore  your trading strategy.",
+          images: [
+            "/portfolio/temp.jpg",
+            "/portfolio/port-multiple-target.jpg",
+            "trailing-stoploss.jpg"
+          ]
+        },
+    
+      
+      ],
+      "excel" : [
+        {
+          projectname: "Exit",
+          description: "Experienced traders often employ setting multiple profit targets with partial exits, enabling them to secure profits at various stages while retaining a position for further gains. We specialize in offering customized solutions to seamlessly integrate this technique into your strategy , enhancing your ability to manage trades effectively and optimize profitability.",
+          images: [
+            "/portfolio/temp.jpg",
+            "/portfolio/port-multiple-target.jpg",
+            "trailing-stoploss.jpg"
+          ]
+        },
+        {
+          projectname: "StopLoss",
+          description: "Our Trailing Stop Loss module provides traders with a robust tool for managing risk in dynamic market conditions. Our specialized service ensures that clients can effectively use this module to protect their capital and enhance their overall trading performance. This innovative feature adapts to market movements, offering increased flexibility and peace of mind.",
+          images: [
+            "/portfolio/temp.jpg",
+            "/portfolio/port-multiple-target.jpg",
+            "trailing-stoploss.jpg"
+          ]
+        },
+     
+      ],
+  
   }
   
   

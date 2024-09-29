@@ -23,8 +23,12 @@ export default function Portfolio() {
     const y = e.clientY - rect.top;
     setCursorPosition({ x, y });
   };
+
+  // Update `tab` state only when `comboFilter` changes
   useEffect(() => {
-    setTab(comboFilter);
+    if (comboFilter) {
+      setTab(comboFilter);
+    }
   }, [comboFilter]);
 
   const filteredProjects = useMemo(() => {
@@ -34,13 +38,13 @@ export default function Portfolio() {
         project.projectname.toLowerCase().includes(filter.toLowerCase())
       );
     } else {
-      const tabProjects = tabsData[tab] || Object.values(tabsData).flat(); 
+      const tabProjects = tabsData[tab] || []; 
       return tabProjects.filter(project =>
         filter === "" || project.projectname.toLowerCase().includes(filter.toLowerCase())
       );
     }
-  }, [filter, tab, tabsData]);
-console.log(filter,filteredProjects )
+  }, [filter, tab]);
+
   return (
     <section className="w-full h-full lg:px-12 py-12 md:py-24 lg:py-32">
       <Tabs value={tab} className="w-full h-full" onValueChange={setTab}>
@@ -55,7 +59,7 @@ console.log(filter,filteredProjects )
 
         {/* Input for filtering projects */}
         <div className="mt-4 mb-6 flex border items-center max-w-md mx-auto p-2 rounded-3xl overflow-hidden relative">
-          <ComboboxDemo value={comboFilter} setValue={setComboFilter}  />
+          <ComboboxDemo value={comboFilter} setValue={setComboFilter} />
           <Input
             type="text"
             placeholder="Filter projects by name..."
@@ -73,15 +77,11 @@ console.log(filter,filteredProjects )
             animate="visible"
             exit="exit"
           >
-            {/* `initial={false}` prevents reinitialization, and `exitBeforeEnter` ensures smooth transition */}
-            <AnimatePresence initial={false} 
-            mode="wait"
-
-            >
+            <AnimatePresence initial={false} mode="wait">
               {filteredProjects.map((project, idx) => (
                 <motion.article
                   className="rounded-lg border group h-full bg-background shadow-sm relative overflow-hidden"
-                  key={project.projectname + idx}  // Ensure a unique key for each project
+                  key={project.projectname + idx}
                   variants={cardVariants}
                   initial="hidden"
                   animate="visible"
