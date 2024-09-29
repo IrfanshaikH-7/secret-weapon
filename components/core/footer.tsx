@@ -50,22 +50,22 @@ export default function Footer() {
     <h3 className=" mb-4 sm:text-center text-lg font-semibold text-white">Our Products</h3>
     <ul className="flex flex-col  sm:items-center justify-center gap-1 text-base font-medium text-white/70 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#" className="hover:underline">AFL Development</a>
+            <a href="/our-products#aD" className="hover:underline">AFL Development</a>
         </li>
         <li>
-            <a href="#" className="hover:underline">Pinescript Development</a>
+            <a href="/our-products#pineD" className="hover:underline">Pinescript Development</a>
         </li>
         <li>
-            <a href="#" className="hover:underline">AFL to Pinescript Conversion</a>
+            <a href="/our-products" className="hover:underline">AFL to Pinescript Conversion</a>
         </li>
         <li>
-            <a href="#" className="hover:underline">Pinescript to AFL Conversion</a>
+            <a href="/our-products" className="hover:underline">Pinescript to AFL Conversion</a>
         </li>
         <li>
-            <a href="#" className="hover:underline">Optimization</a>
+            <a href="/our-products#opt" className="hover:underline">Optimization</a>
         </li>
         <li>
-            <a href="#" className="hover:underline">Automation
+            <a href="/our-products#auto" className="hover:underline">Automation
 </a>
         </li>
     </ul>
@@ -74,8 +74,8 @@ export default function Footer() {
     <h3 className=" mb-4 text-start text-lg font-semibold text-white">Contact Details</h3>
     <article className="flex flex-col  items-start justify-center gap-1 text-base font-medium text-white/70 dark:text-gray-400 sm:mt-0">
         <p>Kolhapur, Maharashtra, India</p>
-        <span>+91 9023797391</span>
         <span>+91 9370113085</span>
+        <span>+91 9023797391</span>
         <p>support@secretweapon.in</p>
     </article>
     </div>

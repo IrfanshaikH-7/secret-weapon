@@ -1,8 +1,11 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import callToAction from '../../public/phone-footer-sided.png'
 import { Button } from '../ui/button'
+import { useRouter } from 'next/navigation'
 export default function CallToAction() {
+  const router = useRouter()
   return (
     <section className='md:w-[95%] flex-col md:flex-col flex justify-center h-full overflow-hidden md:overflow-visible md:h-80 relative w-full  mx-auto bg-black rounded-[40px]'>
       <div className='flex-1 p-12 space-y-2 text-white'>
@@ -14,6 +17,7 @@ export default function CallToAction() {
         </ul>
 
 <button
+onClick={()=> router.push('/contact')}
   className="overflow-hidden  w-36 py-2 px-4 h-11 mt-4 bg-black text-white border rounded-xl text-xl font-bold cursor-pointer relative z-10 group"
 >
   Start now

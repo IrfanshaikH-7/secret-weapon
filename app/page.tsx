@@ -38,9 +38,9 @@ export default function Home() {
           <h4 className="text-white text-sm md:text-base">We Have Developed and Automated More
           Than 1000 Strategies
           </h4>
-          <button className="px-6 py-3 rounded-2xl group w-full sm:max-w-40 hover:gap-8 transition-all duration-300 gap-3 flex items-center bg-white">
+          <Link href={'/our-portfolio'}  className="px-6 py-3 rounded-2xl group w-full sm:max-w-40 hover:gap-8 transition-all duration-300 gap-3 flex items-center bg-white">
           <span>Portfolio</span> <ArrowRight className="group-hover:-rotate-45 transition-all duration-300" size={16}/>
-        </button>
+        </Link>
         </div>
     </div>
       </div>

@@ -18,7 +18,7 @@ import { DrumstickIcon } from "lucide-react";
 const Products: { title: string; href: string; description: string }[] = [
   {
     title: "Python Development",
-    href: "/our-products#pyD",
+    href: "/our-products#pyD", 
     description:
       "Our team specializes in developing custom indicators and trading systems using Python.",
   },

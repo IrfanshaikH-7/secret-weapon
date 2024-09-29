@@ -34,18 +34,10 @@ export default function Portfolio() {
         project.projectname.toLowerCase().includes(filter.toLowerCase())
       );
     } else {
-      const tabProjects = tabsData[tab] ; 
-      if(!tabProjects){
-        const allProjects = Object.values(tabsData).flat();
-        return allProjects.filter(project =>
-          project.projectname.toLowerCase().includes(filter.toLowerCase())
-        );
-      } else {
-        return tabProjects.filter(project =>
-          filter === "" || project.projectname.toLowerCase().includes(filter.toLowerCase())
-        );
-      }
-     
+      const tabProjects = tabsData[tab] || Object.values(tabsData).flat(); 
+      return tabProjects.filter(project =>
+        filter === "" || project.projectname.toLowerCase().includes(filter.toLowerCase())
+      );
     }
   }, [filter, tab, tabsData]);
 console.log(filter,filteredProjects )
