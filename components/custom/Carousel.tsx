@@ -26,7 +26,7 @@ export const ImageSwiper: React.FC<{ images: string[]; className?: string }> = (
   return (
     <div
       className={cn(
-        'group/hover relative aspect-[4/3] h-full w-full overflow-hidden rounded-lg',
+        'group/hover relative  h-full w-full overflow-hidden rounded-lg',
         className
       )}>
       <div className="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-5 ">
