@@ -149,7 +149,7 @@ export default function ProductSection() {
                   fill
                   className=''
                 />
-                <div className='bg-white/70 shadow-md border flex items-center justify-center text-slate-900 backdrop-blur-sm h-12 w-40 absolute bottom-2 right-2 rounded-xl'>
+                <div className='bg-white/70 shadow-md border flex items-center justify-center text-slate-900 backdrop-blur-sm h-12 p-2 w-44 absolute bottom-2 right-2 rounded-xl'>
                   {product.title}
                 </div>
               </Link>
