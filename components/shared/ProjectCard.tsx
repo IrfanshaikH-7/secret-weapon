@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/lib/variants'
 import { Button } from '../ui/button'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 type contentSectionType = {
     id: string
     imageDesc?:string
