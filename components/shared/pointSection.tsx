@@ -41,27 +41,27 @@ export default function PointSection() {
         </p>
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-4 mt-4">
   <div className="flex items-center gap-1 ">
-        <ChartScatter size={32}  className="font-semibold p-1 fill-green-400"/>
+        <ChartScatter size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
     </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-green-400"/>
+  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-green-400"/>
+  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-green-400"/>
+  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-green-400"/>
+  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
     </div>
     <div className="flex items-center gap-1 ">
-    <HomeIcon size={32}  className="font-semibold p-1 fill-green-400"/>
+    <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
       <p>Developer rendered in it</p>
     </div>
   </div>

@@ -10,7 +10,8 @@ export default function AboutPage() {
   return (
     <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative">
       <div className="h-full w-full min-h-[60vh] relative flex  flex-col items-center justify-center  bg-black rounded-[40px]">
-        <span className="h-[360px] w-[360px] bg-transparent pointer-events-none border-[12px] rounded-[40px] top-40 right-20 border-yellow-300 absolute rotate-45" />
+      <span className="h-40 w-40 lg:h-[360px] lg:w-[360px] bg-transparent pointer-events-none border-[12px] rounded-[40px] top-[374px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" />
+
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-4xl ld:text-6xl font-extrabold">
             About secret weapon
@@ -84,7 +85,7 @@ export default function AboutPage() {
                 Professional traders
               </h3>
             </div>
-            <p className="text-neutral-600  mt-4 text-sm sm:text-base px-4 ">
+            <p className="text-neutral-600  mt-4 text-[15px] sm:text-base px-4 ">
               Algo trading can help professional traders and investors who are
               seeking to reduce their emotional biases in decision-making and
               execute trades more efficiently based on data-driven strategies.
@@ -99,7 +100,7 @@ export default function AboutPage() {
                 Working Professional
               </h3>
             </div>
-            <p className="text-neutral-600  mt-4 text-sm sm:text-base px-4 ">
+            <p className="text-neutral-600  mt-4 text-[15px] sm:text-base px-4 ">
               Algo trading can help working professionals by enabling them to
               automate their trading strategies, allowing them to trade even
               while they are busy with their day jobs. This can help them
@@ -114,7 +115,7 @@ export default function AboutPage() {
                 Novice traders
               </h3>
             </div>
-            <p className="text-neutral-600  mt-4 text-sm sm:text-base px-4 ">
+            <p className="text-neutral-600  mt-4 text-[15px] sm:text-base px-4 ">
               Algo trading can provide opportunities for individuals who may not
               have extensive trading experience but are interested in utilizing
               technology to invest in the market. For novice traders, it can

@@ -59,7 +59,7 @@ export function Testimonials() {
 
   return (
     <>
-    <main className="h-full w-full  ">
+    <main className="h-full w-full pt-8 ">
     <div className="text-xl w-fit mx-auto  relative md:text-4xl font-[1000] bg-[url('/secret-3.png')] text-center bg-clip-text mb-4 text-transparent">
 
     <div className='h-[2px] w-24 absolute -bottom-0 -right-12 rounded-full bg-slate-600'/>

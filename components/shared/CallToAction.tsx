@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 export default function CallToAction() {
   const router = useRouter()
   return (
-    <section className='md:w-[95%] flex-col md:flex-col flex justify-center h-full overflow-hidden md:overflow-visible md:h-80 relative w-full  mx-auto bg-black rounded-[40px]'>
+    <section className='md:w-[95%] mt-8 flex-col md:flex-col flex justify-center h-full overflow-hidden md:overflow-visible md:h-80 relative w-full  mx-auto bg-black rounded-[40px]'>
       <div className='flex-1 p-12 space-y-2 text-white'>
         <h3 className='text-2xl  lg:text-3xl xl:text-4xl font-bold'>Algo Trading Will Help You <br className=' lg:hidden' /> , If You Are:</h3>
         <ul className='list-disc pl-4 space-y-2 py-2'>
@@ -15,7 +15,8 @@ export default function CallToAction() {
           <li className='text-sm md:text-base text-neutral-300 font-semibold'>Want To Maximize Your Returns</li>
           <li className='text-sm md:text-base text-neutral-300 font-semibold'>Want To Minimize Your Risk</li>
         </ul>
-
+<div className='h-fit w-fit relative'>
+  <Image src={'/svgs/arrow-left-ft.svg'} className='absolute -right-28 -top-10' height={80} width={80} alt={'arrow'}/>
 <button
 onClick={()=> router.push('/contact')}
   className="overflow-hidden  w-36 py-2 px-4 h-11 mt-4 bg-black text-white border rounded-xl text-xl font-bold cursor-pointer relative z-10 group"
@@ -34,6 +35,8 @@ onClick={()=> router.push('/contact')}
     className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-8 z-10"
     >Connect</span>
 </button>
+</div>
+
 
       </div>
       <div className='flex-1 flex items-end justify-end relative px-4  md:px-8'>

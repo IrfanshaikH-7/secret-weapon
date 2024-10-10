@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="h-full w-full px-4">
 
-<section className="h-[80vh] md:h-screen py-4 w-full mt-4 md:mt-0 relative">
+<section className="h-[80vh] md:h-screen py-4 w-full  md:mt-0 relative">
     
     <div className="h-full w-full relative flex flex-col justify-between gap-8 md:gap-0 overflow-hidden bg-black rounded-[40px]">
       <ImageOverlay />
@@ -56,7 +56,7 @@ export default function Home() {
       <Link href={'#'} className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><MessageCircleIcon /></Link>
       </div>
   </section>
-  
+  <div className="mt-18 sm:mt-8">
   <ContentSection 
   content="left"
   SuperTitle="one-stop solution"
@@ -66,6 +66,8 @@ export default function Home() {
   image={"/quotestream_desktop_and_mobile.png"}
   button={"Read More"}
   />
+  </div>
+ 
 
   <section id="we_are_here" className="h-full  w-full flex flex-col items-center justify-center relative overflow-hidden">
     <span className="text-5xl md:text-8xl font-[1000] bg-[url('/secret-3.png')] text-center bg-clip-text mb-4 text-transparent">We are here</span>

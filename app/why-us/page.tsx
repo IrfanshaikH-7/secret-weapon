@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div className="p-4">
       <section className="h-full w-full min-h-[60vh] relative flex flex-col items-center justify-center bg-black rounded-[40px]">
-        <span className="h-40 w-40 lg:h-[360px] lg:w-[360px] bg-transparent pointer-events-none border-[12px] rounded-[40px] top-80 lg:top-40 z-20 right-5 lg:right-20 border-yellow-300 absolute rotate-45" />
+      <span className="h-40 w-40 lg:h-[360px] lg:w-[360px] bg-transparent pointer-events-none border-[12px] rounded-[40px] top-[374px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" />
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-3xl sm:text-4xl ld:text-6xl font-extrabold">
             Why Us

@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, LinkedinIcon, X } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 export default function Footer() {
@@ -7,8 +8,10 @@ export default function Footer() {
 
 <footer className="flex flex-col bg-black rounded-[40px] shadow m-4 pb-4 ">
     <section className='flex flex-col md:flex-row items-center justify-start  gap-4 lg:gap-12 px-4 sm:px-8 py-16'>
-    <article className='flex flex-col gap-6 lg:gap-8 w-full max-w-full md:max-w-52 lg:max-w-72 px-8 py-16 justify-center items-center bg-white rounded-3xl'>
-        <h3 className='text-xl lg:text-2xl font-semibold '>LOGO_<span>GO</span></h3>
+    <article className='flex flex-col gap-4 lg:gap-4 w-full max-w-full md:max-w-52 lg:max-w-72 px-8 py-16 justify-center items-center bg-white rounded-3xl'>
+    <div className="flex items-center relative h-16 w-48 ">
+        <Image src={'/mobile_logo.png'} fill className="object-contain" alt={'logo'}/>
+      </div>
         <p className='text-center text-xs lg:text-base text-neutral-600'>We are dedicated to providing our clients with the most effective and innovative trading solutions.</p>
         <div className='flex gap-3 items-start'>
 

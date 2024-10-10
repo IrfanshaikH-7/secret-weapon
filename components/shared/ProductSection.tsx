@@ -70,9 +70,6 @@ export default function ProductSection() {
 
         </div>
       <div className='py-16 hidden sm:flex flex-col w-full  items-center justify-center'>
-       
-
-
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -114,12 +111,10 @@ export default function ProductSection() {
               // style={{backgroundImage: `url(${product.imgUrl})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
               className={`w-full aspect-square overflow-hidden border bg-white shadow-md bg-fill bg-opacity-100 p-4 rounded-2xl relative`}>
               <Link href={'/our-products'} className='flex items-center justify-center h-full w-full'>
-              
               <p className='font-bold'>View more</p>
               </Link>
             </motion.div>
         </motion.div>
-
       </div>
       <div className='py-24 sm:hidden w-full flex items-center justify-center'>
         <motion.div
@@ -154,7 +149,6 @@ export default function ProductSection() {
                 </div>
               </Link>
             </motion.div>
-           
             </>
           ))}
            <motion.div
@@ -165,13 +159,10 @@ export default function ProductSection() {
               // style={{backgroundImage: `url(${product.imgUrl})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
               className={`w-full aspect-square overflow-hidden border bg-white shadow-md bg-fill bg-opacity-100 p-4 rounded-2xl relative`}>
               <Link href={'/our-products'} className='flex items-center justify-center h-full w-full'>
-              
               <p className='font-bold'>View more</p>
               </Link>
             </motion.div>
         </motion.div>
-        
-
       </div>
     </main>
   )
