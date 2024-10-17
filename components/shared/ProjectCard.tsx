@@ -82,13 +82,13 @@ export default function ProjectCard({
                 whileInView="active"
                 viewport={{ once: true }}
             >
-                <div className='h-full w-full p-12 relative'>
-                    <div className='h-44 w-1 absolute right-8 rounded-full bg-neutral-200' />
-                    <div className='absolute top-0 left-1/2  -translate-x-1/2 w-[80%] rounded-3xl   border-4 h-[80%] bg-transparent'/>
+                <div className='h-full w-full p-12 relative '>
+                    <div className='h-44 w-1 absolute right-8 rounded-full bg-neutral-200 ' />
+                    <div className='absolute top-0 left-1/2  -translate-x-1/2 w-[80%] rounded-3xl  border-4 h-[80%] bg-transparent'/>
                 <Image
                     src={image}
                     alt="stock-pc-image"
-                    className="object-contain scale-95 -mt-8"
+                    className="object-contain scale-75 -mt-8 absolute"
                     fill
                 />
                     <div className='absolute bottom-6 md:bottom-12 text-neutral-600 p-2 md:p-4 font-medium bg-white right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 w-[80%] rounded-3xl   border-4 h-[20%] bg-transparent'>
