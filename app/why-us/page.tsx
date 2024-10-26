@@ -2,6 +2,20 @@ import React from "react";
 import ContentSection from "@/components/shared/ContentSection";
 import Image from "next/image";
 import NeedAssistant from "@/components/shared/need-assistant";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Why Choose Secret Weapon | Leading Algorithmic Trading Solutions",
+  description:
+    "Discover why Secret Weapon is the top choice for traders seeking AI and Python-powered trading solutions to achieve success.",
+  keywords: [
+    "Why choose Secret Weapon",
+    "top algorithmic trading solutions",
+    "AI-powered trading",
+    "Python trading platforms",
+    "successful trading strategies",
+  ],
+};
 
 export default function page() {
   return (

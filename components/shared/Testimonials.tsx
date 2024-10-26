@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { Quote } from "lucide-react";
 
 export function Testimonials() {
   const testimonials = [
@@ -72,14 +73,18 @@ export function Testimonials() {
           delay: 2000,
         }),
       ]}
-      className="w-full mx-auto sm:max-w-[80%] pt-12"
+      className="w-full mx-auto sm:max-w-[80%] pt-12 overflow-x-hidden"
     >
       <CarouselContent className="-ml-1">
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="px-1 py-2">
-              <Card className="rounded-3xl hover:transform hover:-translate-y-2 transition-transform duration-300">
-                <CardContent className="flex flex-col justify-center items-center gap-6 p-8">
+              <Card className="rounded-3xl  relative hover:transform hover:-translate-y-2 transition-transform duration-300">
+                <div className="absolute -top-4 z-10 -right-12 rounded-full p-2 bg-white">
+
+                <Quote className=" h-8 w-8 text-neutral-400 rotate-180  "/>
+                </div>
+                <CardContent className="flex  flex-col justify-center items-center gap-6 p-8">
                   <div className="flex relative w-full gap-2 items-center">
                     <picture className="relative h-14 w-14 max-h-14 max-w-14 rounded-full overflow-hidden">
                       <Image

@@ -3,7 +3,20 @@ import NeedAssistant from '@/components/shared/need-assistant'
 import ProjectCard from '@/components/shared/ProjectCard'
 import Products from '@/pages/Products'
 import React from 'react'
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "Secret Weapon | Our Products",
+  description:
+    "Discover Secret Weapon's cutting-edge algorithmic trading products, crafted to enhance trading strategies with AI and Python.",
+  keywords: [
+    "Secret Weapon products",
+    "algorithmic trading tools",
+    "AI trading solutions",
+    "Python trading products",
+    "automated trading systems",
+  ],
+};
 export default function page() {
   return (
     <div className='p-4 w-full h-full z-20 overflow-x-hidden max-w-[1560px] mx-auto'>

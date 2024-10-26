@@ -11,15 +11,14 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { LocateIcon, Mail, Phone } from "lucide-react";
+import { Loader2, LocateIcon, Mail, Phone } from "lucide-react";
+import { toast } from "sonner";
 
 const FormSchema = z.object({
   name: z.string(),
@@ -30,6 +29,7 @@ const FormSchema = z.object({
   }),
 });
 export default function ContactPage() {
+  const [isLoading, setIsLoading] = React.useState(false);
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -41,6 +41,7 @@ export default function ContactPage() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
+    setIsLoading(true)
     try {
       const response = await fetch('/api/mail', {
         method: 'POST',
@@ -53,14 +54,17 @@ export default function ContactPage() {
       const result = await response.json();
   
       if (response.ok) {
-        console.log(result.message); // Handle success
-        alert('Your message has been sent successfully!');
+        console.log(result.message); 
+        toast.success('Your message has been sent successfully!');
+        setIsLoading(false)
       } else {
-        console.error(result.error); // Handle error
-        alert('Failed to send the message.');
+        console.error(result.error); 
+        toast.warning(result.message ? result.message:'Failed to send the message.');
+        setIsLoading(false)
       }
     } catch (error) {
-      console.error('Error:', error); // Handle network error
+      console.error('Error:', error); 
+      setIsLoading(false)
       alert('An error occurred while sending your message.');
     }
   }
@@ -162,8 +166,8 @@ export default function ContactPage() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="rounded-3xl">
-                  Submit
+                <Button type="submit" className="rounded-3xl min-w-16">
+                  {isLoading? <Loader2 className="w-5 h-5 animate-spin" /> : "Submit"}
                 </Button>
               </form>
             </Form>
@@ -171,10 +175,10 @@ export default function ContactPage() {
           <div className="flex-1 flex flex-col gap-4">
             <div className="flex-1 flex bg-slate-100 rounded-[40px] items-center justify-center">
               <Image
-                src="/contact-box-img.jpg" // Update this to the path of your image
+                src="/contact-box-img.jpg"
                 alt="Description of image"
-                width={500} // Adjust width as needed
-                height={300} // Adjust height as needed
+                width={500} 
+                height={300} 
                 className="rounded-[40px]"
               />
             </div>

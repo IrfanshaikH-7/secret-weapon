@@ -11,6 +11,19 @@ import {  Testimonials } from "@/components/shared/Testimonials";
 import {  ArrowRight, ChevronDown, Facebook, Instagram, LinkedinIcon, MessageCircleIcon, PhoneOutgoing } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Secret Weapon | Algorithmic Trading Solutions  ",
+  description:
+    "Explore algorithmic trading with Python, AI-powered tools, and cloud-based platforms. Start your profitable trading journey with Secret Weapon solutions.",
+  keywords: [
+    "Algorithmic trading with Python",
+    "AI-powered trading tools",
+    "automated trading systems",
+    "Secret Weapon",
+  ],
+};
 
 export default function Home() {
 

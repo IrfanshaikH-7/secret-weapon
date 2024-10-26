@@ -5,6 +5,19 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { Baby, ChartArea, Handshake, Lightbulb } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: "About Secret Weapon | Algorithmic Trading Experts",
+  description:
+    "Learn about Secret Weapon, the innovators behind cutting-edge algorithmic trading solutions with Python and AI technology.",
+  keywords: [
+    "About Secret Weapon",
+    "algorithmic trading expertise",
+    "AI-powered trading tools",
+    "Python trading solutions",
+    "trading strategy experts",
+  ],
+};
 
 export default function AboutPage() {
   return (

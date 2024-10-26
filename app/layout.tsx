@@ -6,6 +6,7 @@ import Sidebar from "@/components/core/mobile-navbar";
 import LenisScroll from "@/components/core/LenisScroll";
 import Footer from "@/components/core/footer";
 import FloatingNavWrapper from "@/components/core/FloadingNavWrapper";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Nunito({ subsets: ["latin"],weight:['1000','900','800','700','600','500','400','300','200'] });
 
@@ -67,6 +68,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer/>
+          <Toaster position="top-right" className="z-[99999999999999] bg-white"/>
         </body>
     </html>
   );

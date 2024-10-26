@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Create the transporter object using SMTP transport
 const transporter = nodemailer.createTransport({
   service: 'gmail', // or your email service provider
   auth: {
@@ -18,7 +17,7 @@ console.log(process.env.EMAIL_PASS)
 console.log({ name, email, subject, message })
     // Validate the data (basic example, adjust as needed)
     if (!name || !email || !subject || !message) {
-      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+      return NextResponse.json({ error: 'Missing required fields',message: "Missing required fields"}, { status: 400 });
     }
 
     // Send email
