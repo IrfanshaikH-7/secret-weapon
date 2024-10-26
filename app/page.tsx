@@ -21,7 +21,8 @@ export default function Home() {
     
     <div className="h-full w-full relative flex flex-col justify-between gap-8 md:gap-0 overflow-hidden bg-black rounded-[40px]">
       <ImageOverlay />
-      <div className="flex flex-col justify-between gap-32 px-8 py-4 z-10 mx-4 pt-32 md:pt-2">
+      <div className="h-full w-full flex flex-col justify-between gap-32 px-8 py-4 pt-32 md:pt-2 z-30 bg-black/60">
+      <div className="flex flex-col justify-between gap-32 px-8 py-4  mx-4 pt-32 md:pt-2">
     <nav className=" hidden md:flex justify-between items-center  ">
      <Image
      src="/logo.png"
@@ -44,8 +45,10 @@ export default function Home() {
         </div>
     </div>
       </div>
-   
     <HeroFooter />
+     
+      </div>
+   
     
     
     </div>

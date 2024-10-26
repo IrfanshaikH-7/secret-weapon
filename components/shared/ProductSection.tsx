@@ -63,11 +63,10 @@ const products = [
 export default function ProductSection() {
   return (
     <main className='h-full w-full flex flex-col mt-2 items-center justify-center '>
-       <div className="text-xl  relative md:text-4xl font-[1000] bg-[url('/secret-3.png')] text-center bg-clip-text  text-transparent">
-          <div className='h-px w-24 absolute -bottom-1 -right-12 rounded-full bg-slate-600' />
-          <span>Our products</span>
-          <div className='h-0.5 w-24 absolute -top-1 -left-12 rounded-full bg-slate-600' />
-
+       <div className="relative w-fit flex flex-col group">  
+          <span className="group-hover:w-12 group-hover:opacity-100 h-1 opacity-0 w-0 transition-all duration-300 bg-black rounded-xl self-end" />  
+          <h2 className="text-4xl md:text-2xl my-2 lg:text-[40px] text-neutral-900 font-extrabold">{"Our Products"}</h2>  
+          <span className="h-1 w-12 bg-black rounded-xl  group-hover:w-24 transition-all duration-300" />  
         </div>
       <div className='py-16 hidden sm:flex flex-col w-full  items-center justify-center'>
         <motion.div
