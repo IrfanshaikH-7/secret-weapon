@@ -20,6 +20,7 @@ export default function page() {
           </p>
         </div>
       </section>
+<div className='flex flex-col gap-12 min-[400px]:gap-0'>
 
       <ProjectCard
       id={'aD'}
@@ -164,6 +165,7 @@ id={'-'}
         image={"/product/licensing.png"}
         button={"Read More"}
       />
+</div>
 
 
 

@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Image from "next/image";
+import NeedAssistant from "@/components/shared/need-assistant";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -200,6 +201,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <NeedAssistant/>
     </main>
   );
 }
