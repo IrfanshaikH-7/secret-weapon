@@ -8,7 +8,7 @@ import Lenis from 'lenis';
 export default function HeroFooter() {
 
   return (
-    <div className=" w-full h-28 z-10 px-4 pb-4  absolute bottom-0 left-0 right-0 " >
+    <div className=" w-full h-28 z-10 px-4 pb-4  absolute bottom-0 left-0 right-0 hidden md:block " >
     <div className="bg-white flex items-center h-full min-h-full w-full rounded-[36px]">
     <div className="w-full flex justify-center md:justify-between items-center md:items-start max-w-xl mx-auto">
     <Link href={'#'} className="p-4 hidden md:block"><Instagram /></Link>

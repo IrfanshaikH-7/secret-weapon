@@ -34,8 +34,8 @@ export default function Home() {
     
     <div className="h-full w-full relative flex flex-col justify-between gap-8 md:gap-0 overflow-hidden bg-black rounded-[40px]">
       <ImageOverlay />
-      <div className="h-full w-full flex flex-col justify-between gap-32 px-8 py-4 pt-32 md:pt-2 z-30 bg-black/60">
-      <div className="flex flex-col justify-between gap-32 px-8 py-4  mx-4 pt-32 md:pt-2">
+      <div className="h-full w-full flex flex-col justify-between gap-32 items-start pl-0 pr-8 md:pl-8 py-4 pt-32 md:pt-2 z-30 bg-black/60">
+      <div className="flex flex-col justify-between gap-32 pl-0 px-8  py-4  mx-4 pt-32 md:pt-2">
     <nav className=" hidden md:flex justify-between items-center  ">
      <Image
      src="/logo.png"
@@ -46,9 +46,9 @@ export default function Home() {
       <StaticNav color={'white'} />
 
     </nav>
-    <div className="flex h-fit items-center  md:mt-0">
+    <div className="flex h-fit items-center -mt-8 md:mt-0">
       <div className="w-full md:max-w-2xl space-y-4">
-          <h1 className="text-white text-2xl md:text-6xl font-bold ">The Future of Automated Trading is Here</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold ">The Future of Automated Trading is Here</h1>
           <h4 className="text-white text-sm md:text-base">We Have Developed and Automated More
           Than 1000 Strategies
           </h4>
