@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '@/lib/variants'
 import { Button } from '../ui/button'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 type contentSectionType = {
     id: string
     imageDesc?:string
@@ -67,9 +68,9 @@ export default function ProjectCard({
                         }
 
 
-                        <Button onClick={() => router.push(`/contact`)}>
+                        <Link className='bg-black text-center  text-white py-1.5 px-6 rounded-md' href={"https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!"} target="_blank" >
                             Get Quotes
-                        </Button>
+                        </Link>
 
                     </motion.article>
                 )
@@ -138,9 +139,9 @@ export default function ProjectCard({
                             ))
                         }
 
-                        <Button onClick={() => router.push(`/contact`)}>
+<Link className='bg-black text-white py-1.5 text-center px-6 rounded-md' href={"https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!"} target="_blank" >
                             Get Quotes
-                        </Button>
+                        </Link>
 
                     </motion.article>
                 )

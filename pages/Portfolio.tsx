@@ -8,6 +8,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { tabsData } from "@/contants/portfolioData";
 import { cardVariants, containerVariants } from "@/lib/variants";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
 
 export default function Portfolio() {
@@ -129,8 +130,10 @@ export default function Portfolio() {
                     <h3 className="text-lg md:text-xl font-bold">{project.projectname}</h3>
                     <p className="text-muted-foreground text-[15px] line-clamp-[7]">{project.description}</p>
                   </div>
-                  <div className="px-3 py-2">
-                    <Button className="w-full">Get Quotes</Button>
+                  <div className="px-3 pb-4 pt-2">
+                  <Link className='bg-black text-white p-1.5 px-6 rounded-md' href={"https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!"} target="_blank" >
+                            Get Quotes
+                        </Link>
                   </div>
                 </motion.article>
               ))}

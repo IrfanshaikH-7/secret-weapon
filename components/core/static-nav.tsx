@@ -91,7 +91,8 @@ export function StaticNav({ color }: any) {
                 >
                   {`${product?.description.slice(0, 60)}...`}{" "}
                   <Link
-                    href={"contact"}
+                    href={"https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!"}
+                    target="_blank"
                     className="text-xs text-yellow-700 hover:text-blue-500 hover:underline"
                   >
                     Request A Quote

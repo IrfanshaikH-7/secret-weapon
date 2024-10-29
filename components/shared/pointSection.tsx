@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'  
 import { motion } from 'framer-motion'  
 import { fadeIn } from '@/lib/variants'  
-import { ChartScatter, Home, HomeIcon } from 'lucide-react'
+import { BarChart2, BarChart3, ChartScatter, Database, Disc2, Home, HomeIcon, Presentation, Settings } from 'lucide-react'
 
 export default function PointSection() {  
   return (  
@@ -41,28 +41,28 @@ export default function PointSection() {
         </p>
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-4 mt-4">
   <div className="flex items-center gap-1 ">
-        <ChartScatter size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+        <ChartScatter size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Strategy Development</p>
     </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+  <Database size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Strategy Optimization</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+  <Settings size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Strategy Automation</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+  <Disc2 size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Strategy Library</p>
   </div>
   <div className="flex items-center gap-1 ">
-  <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+  <BarChart3 size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Trade Management</p>
     </div>
     <div className="flex items-center gap-1 ">
-    <HomeIcon size={32}  className="font-semibold p-1 fill-yellow-400"/>
-      <p>Developer rendered in it</p>
+    <Presentation size={32}  className="font-semibold p-1 fill-green-400"/>
+      <p>Risk Management</p>
     </div>
   </div>
   
