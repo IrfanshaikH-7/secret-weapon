@@ -11,7 +11,7 @@ export default function CallToAction() {
       <div className='flex-1 p-12 space-y-2 text-white'>
         <div className='relative w-fit flex flex-col group'>
 
-        <h3 className='text-2xl  lg:text-3xl my-2 xl:text-4xl font-bold'>Algo Trading Will Help You <br className=' lg:hidden' /> , If You Are:</h3>
+        <h3 className='text-2xl  lg:text-3xl my-2 xl:text-4xl font-bold'>Algo Trading Will Help You,<br className=' lg:hidden' /> If You Are:</h3>
         <span className="h-1 w-12 bg-white rounded-xl  group-hover:w-24 transition-all duration-300" />  
 
         </div>
