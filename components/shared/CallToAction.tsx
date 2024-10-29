@@ -23,7 +23,7 @@ export default function CallToAction() {
 <div className='h-fit w-fit relative'>
   <Image src={'/svgs/arrow-left-ft.svg'} className='absolute -right-28 -top-10' height={80} width={80} alt={'arrow'}/>
 <button
-onClick={()=> router.push('/contact')}
+onClick={()=> router.push('https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!')}
   className="overflow-hidden  w-36 py-2 px-4 h-11 mt-4 bg-black text-white border rounded-xl text-xl font-bold cursor-pointer relative z-10 group"
 >
   Start now
