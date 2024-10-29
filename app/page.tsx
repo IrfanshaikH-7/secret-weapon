@@ -66,10 +66,10 @@ export default function Home() {
     
     </div>
     <div className="w-full flex justify-center  items-center gap-4 mt-3 mx-auto">
-    <Link href={'#'} className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Instagram /></Link>
-      <Link href={'#'} className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Facebook /></Link>
+      <Link href={'https://www.instagram.com/secretweapontradingsolution/'} target="_blank" className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Instagram /></Link>
+      <Link href={'https://www.facebook.com/secretweaponts/'} target="_blank" className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Facebook /></Link>
       <Link href={'https://www.linkedin.com/company/secret-weapon-trading-solution/'}target="/" className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><LinkedinIcon /></Link>
-      <Link href={'#'} className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><MessageCircleIcon /></Link>
+      <Link href={''} className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><MessageCircleIcon /></Link>
       </div>
   </section>
   <div className="mt-18 sm:mt-8">

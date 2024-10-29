@@ -47,7 +47,7 @@ export default function page() {
           "Establish alerts to decrease the amount of time spent looking at screen.",
           "Offering robust back testing capabilities, allowing traders to evaluate the performance of their trading strategies over historical data."
         ]}
-        image={"/product/amibroker-3.png"}
+        image={"/product/afl-dev.png"}
         button={"Read More"}
       />
 
