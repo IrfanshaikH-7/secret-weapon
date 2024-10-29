@@ -1,5 +1,6 @@
-import { Facebook, Instagram, Linkedin, LinkedinIcon, X } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, LinkedinIcon, MessageCircle, X } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -15,17 +16,18 @@ export default function Footer() {
         <p className='text-center text-xs lg:text-base text-neutral-600'>We are dedicated to providing our clients with the most effective and innovative trading solutions.</p>
         <div className='flex gap-3 items-start'>
 
-        <span className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><X className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white'/></span>
-        <span className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><Instagram  className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white'/></span>
-        <a
+        <Link href={'https://www.instagram.com/secretweapontradingsolution'} className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><Instagram  className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white'/></Link>
+        <Link
               href="https://www.linkedin.com/company/secret-weapon-trading-solution/"
               target="_blank"
               rel="noopener noreferrer"
               className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'
             >
               <LinkedinIcon className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white' />
-            </a>
-        <span className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><Facebook className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white' /></span>
+            </Link>
+        <Link href={'https://www.facebook.com/secretweaponts'} className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><Facebook className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white' /></Link>
+        <Link href={'https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!'} className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><MessageCircle className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white' /></Link>
+
         </div>
    </article>
    <div className='flex-1 m-6 md:mt-0  w-full flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-8 md:gap-2 justify-between max-w-4xl mx-auto  sm:items-center '>

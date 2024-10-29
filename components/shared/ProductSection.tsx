@@ -8,53 +8,53 @@ import { url } from 'inspector'
 const products = [
   {
     title: 'AFL Development',
-    imgUrl: '/product/afl-dev.jpg',
+    imgUrl: '/product/afl-dev.png',
     url: '/our-products/'
   },
   {
     title: 'Pinescript Development',
-    imgUrl: '/product/pinescript.jpg',
+    imgUrl: '/product/pinescript.png',
     url: '/our-products/'
   },
   {
     title: 'AFL to Pinescript Conversion',
-    imgUrl: '/product/a-to-p.jpg',
+    imgUrl: '/product/a-to-p.png',
     url: '/our-products/'
   },
   {
     title: 'Pinescript to AFL Conversiont',
-    imgUrl: '/product/p-to-a.jpg',
+    imgUrl: '/product/p-to-a.png',
     url: '/our-products/'
   },
   {
     title: 'Automation',
-    imgUrl: '/product/automation-front.jpg',
+    imgUrl: '/product/automation-front.png',
     url: '/our-products/'
   },
   {
     title: 'Optimization',
-    imgUrl: '/product/optimization-front.jpg',
+    imgUrl: '/product/optimization-front.png',
     url: '/our-products/'
   },
   {
     title: 'Python Development',
-    imgUrl: '/product/py-front.jpg',
+    imgUrl: '/product/python-3.png',
     url: '/our-products/'
   },
 
   {
     title: 'Metatrader Development',
-    imgUrl: '/product/metatrader-front.png',
+    imgUrl: '/product/metatrader-2.png',
     url: '/our-products/'
   },
   {
     title: 'Licensing',
-    imgUrl: '/product/licensing-front.png',
+    imgUrl: '/product/licensing-maini.png',
     url: '/our-products/'
   },
   {
     title: 'DLL Conversion',
-    imgUrl: '/product/dll-conversation.jpg',
+    imgUrl: '/product/dll-conversation.png',
     url: '/our-products/'
   },
 
