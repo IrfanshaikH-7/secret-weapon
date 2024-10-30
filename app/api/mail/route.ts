@@ -13,7 +13,7 @@ export async function POST(request: Request) {
   try {
     const { name, email, subject, message } = await request.json();
 console.log(process.env.EMAIL_USER)
-console.log(process.env.EMAIL_PASS)
+console.log(process.env.COMPANY_EMAIL)
 console.log({ name, email, subject, message })
     // Validate the data (basic example, adjust as needed)
     if (!name || !email || !subject || !message) {

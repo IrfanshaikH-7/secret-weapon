@@ -24,8 +24,8 @@ const FormSchema = z.object({
   name: z.string(),
   email: z.string().email(),
   subject: z.string(),
-  message: z.string().min(8, {
-    message: "Username must be at least 8 characters.",
+  message: z.string().min(4, {
+    message: "Message must be at least 4 characters.",
   }),
 });
 export default function ContactPage() {
@@ -56,6 +56,7 @@ export default function ContactPage() {
       if (response.ok) {
         console.log(result.message); 
         toast.success('Your message has been sent successfully!');
+        form.reset();
         setIsLoading(false)
       } else {
         console.error(result.error); 
