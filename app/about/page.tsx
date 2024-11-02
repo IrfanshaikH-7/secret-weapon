@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-x-hidden">
       <div className="h-full w-full min-h-[60vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
-      <span className="h-40 w-40 lg:h-[360px] lg:w-[360px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" />
+      <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" />
 
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-4xl ld:text-6xl font-extrabold">
@@ -38,7 +38,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="relative mt-12 ">
+      {/* <div className="relative mt-12 ">
       <div className="absolute h-24 w-24 rounded-xl  custom-bounce top-60 xl:left-48 left-32 hidden lg:flex">
           <div className="h-3 w-3 bg-slate-400 rounded-full absolute -top-4 -left-4"/>
           <Image src={'/why-us/bars.jpeg'} alt="bar" fill className="rounded-xl "  />
@@ -67,8 +67,20 @@ export default function AboutPage() {
             to their success in the trading world.
           </p>
         </article>
-      </div>
+      </div> */}
       <ContentSection
+        content="right"
+        SuperTitle="Our Vision"
+        title="Revolutionizing Trading through Innovative Algo Solutions"
+        image="/ssss.png"
+        
+        descriptions={[
+          "we are here with the vision of an algo trading company committed to transforming the way trading is done. With an emphasis on innovation, the company aims to create advanced trading solutions through the use of cutting-edge technology and algorithms. The goal is to revolutionize the industry by offering clients access to customized, high-performance trading strategies that are designed to maximize their profits.",
+          " Ultimately, the mission is to deliver innovative algo solutions that not only meet, but exceed the expectations of clients and contribute to their success in the trading world.",
+        ]}
+      />
+      <div className="-mt-20">
+       <ContentSection
         content="right"
         title="Providing a competitive edge through algorithmic trading"
         image="/about/system.png"
@@ -77,6 +89,8 @@ export default function AboutPage() {
           "Our team is dedicated to providing tailored algorithmic trading solutions that are designed to meet the unique needs of our clients, enabling them to stay ahead of the competition and achieve success in the fast-paced world of trading.",
         ]}
       />
+      </div>
+     
       <section className="h-full w-full flex flex-col items-center justify-center">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-black text-center text-4xl  font-extrabold">
