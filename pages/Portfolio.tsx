@@ -47,7 +47,7 @@ export default function Portfolio() {
   }, [filter, tab]);
 
   return (
-    <section className="w-full h-full lg:px-12 py-12 md:py-24 lg:py-32">
+    <section className="w-full max-w-[1546px] mx-auto h-full lg:px-12 py-12 md:py-24 lg:py-32">
       <Tabs value={tab} className="w-full h-full" onValueChange={setTab}>
         <TabsList className="w-full flex flex-wrap gap-4">
           <TabsTrigger value="all" className="min-w-24 lg:min-w-40 hover:bg-neutral-50">All</TabsTrigger>

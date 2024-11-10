@@ -86,7 +86,7 @@ html.lenis, html.lenis body {
   }
   body {
   
-    @apply bg-background  overflow-x-hidden pointer-events-auto h-full w-full max-w-[2546px] text-foreground;
+    @apply bg-background  overflow-x-hidden pointer-events-auto h-full w-full max-w-full mx-auto text-foreground;
   }
 }
 ::selection {

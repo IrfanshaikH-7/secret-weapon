@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function Home() {
 
   return (
-    <main className="h-full w-full px-4 max-w-[1560px] mx-auto">
+    <main className="h-full w-full px-4 max-w-[2546px] mx-auto">
 
 <section className="h-[80vh] md:h-screen py-4 w-full  md:mt-0 relative">
     
