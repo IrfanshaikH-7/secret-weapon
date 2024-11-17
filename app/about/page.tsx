@@ -25,10 +25,10 @@ export default function AboutPage() {
       <div className="h-full w-full min-h-[60vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
         <div className="max-w-3xl flex flex-col items-center z-10">
-          <h2 className="text-white text-center text-4xl ld:text-6xl font-extrabold">
+          <h2 className="text-white text-center text-4xl lg:text-6xl font-extrabold">
             About secret weapon
           </h2>
-          <p className="text-neutral-300 text-center mt-4 text-xs md:text-base px-4 ">
+          <p className="text-neutral-300 text-center mt-4 text-xs md:text-xl leading-snug px-4 ">
             With over a decade of trading experience and three years in the
             industry, our expert team specializes in developing and implementing
             innovative trading strategies using platforms like AmiBroker and

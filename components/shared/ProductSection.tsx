@@ -90,13 +90,61 @@ export default function ProductSection() {
               // style={{backgroundImage: `url(${product.imgUrl})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
               className={`w-full aspect-square overflow-hidden border bg-white shadow-md bg-fill bg-opacity-100 p-4 rounded-2xl relative`}>
               <Link href={product.url}>
-                <Image
-                  src={product.imgUrl}
-                  alt={product.title}
-                  fill
-                  className=''
-                />
-                <div className='bg-white/70 shadow-md border flex items-center justify-center text-sm font-semibold text-slate-900 backdrop-blur-sm h-12 w-48 p-2 absolute bottom-2 right-2 rounded-xl'>
+                {(() => {
+                  switch(product.title) {
+                    case 'Automation': 
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-90'
+                      />
+                    case 'AFL Development':
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-90'
+                      />
+                    case 'Optimization':
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-90'
+                      />
+                    case 'Metatrader Development':
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-[0.6] mt-4 object-contain'
+                      />
+                    case 'Licensing':
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-50'
+                      />
+                    case 'DLL Conversion':
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className='scale-[0.45]'
+                      />
+                    
+                    default:
+                      return <Image
+                        src={product.imgUrl}
+                        alt={product.title}
+                        fill
+                        className=''
+                      />
+                  }
+                })()}
+                <div className='bg-white/70  shadow-md border flex items-center justify-center text-[18px] font-semibold text-slate-900 backdrop-blur-sm h-14 w-[calc(100%-2rem)] p-2 absolute bottom-3 right-1/2 translate-x-1/2 rounded-xl'>
                   {product.title}
                 </div>
               </Link>

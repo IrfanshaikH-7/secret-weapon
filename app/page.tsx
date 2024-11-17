@@ -48,8 +48,8 @@ export default function Home() {
     </nav>
     <div className="flex h-fit items-center -mt-8 md:mt-0">
       <div className="w-full md:max-w-2xl space-y-4">
-          <h1 className="text-white text-4xl md:text-6xl font-bold ">The Future of Automated Trading is Here</h1>
-          <h4 className="text-white text-sm md:text-base">We Have Developed and Automated More
+          <h1 className="text-white text-4xl md:text-7xl font-bold ">The Future of Automated Trading is Here</h1>
+          <h4 className="text-white text-sm md:text-2xl">We Have Developed and Automated More
           Than 1000 Strategies
           </h4>
           <Link href={'/our-portfolio'}  className="px-6 py-3 rounded-2xl group w-full sm:max-w-40 hover:gap-8 transition-all duration-300 gap-3 flex items-center bg-white">
