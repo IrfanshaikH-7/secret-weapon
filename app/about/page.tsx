@@ -80,7 +80,7 @@ export default function AboutPage() {
       />
       <div className="-mt-20">
        <ContentSection
-        content="right"
+        content="left"
         title="Providing a competitive edge through algorithmic trading"
         image="/about/system.png"
         descriptions={[
