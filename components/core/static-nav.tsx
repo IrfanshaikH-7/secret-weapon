@@ -59,10 +59,10 @@ export function StaticNav({isDefault, color }: {isDefault?: boolean, color: stri
     <NavigationMenu >
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href={'/'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Home</Link>
+          <Link href={'/'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Home</Link>
         </NavigationMenuItem>
         <NavigationMenuItem >
-        <Link href={'/our-portfolio'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Our Porfolio </Link>
+        <Link href={'/our-portfolio'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Our Porfolio </Link>
 
           {/* <NavigationMenuTrigger className={`text-${color} hover:text-${color}`}><Link href={'/our-portfolio'}>Our Porfolio</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -80,7 +80,7 @@ export function StaticNav({isDefault, color }: {isDefault?: boolean, color: stri
           </NavigationMenuContent> */}
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={`text-${color}  hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'}`}><Link href={'/our-products'}>Our Products</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className={`text-${color}  hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'}`}><Link href={'/our-products'}>Our Products</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {Products.map((product) => (
@@ -89,6 +89,7 @@ export function StaticNav({isDefault, color }: {isDefault?: boolean, color: stri
                   title={product?.title}
                   href={product?.href}
                 >
+                  
                   {`${product?.description.slice(0, 60)}...`}{" "}
                   <Link
                     href={"https://api.whatsapp.com/send?phone=9023797391&text=Hi%20There!"}
@@ -103,13 +104,13 @@ export function StaticNav({isDefault, color }: {isDefault?: boolean, color: stri
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/why-us'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Why us</Link>
+          <Link href={'/why-us'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Why us</Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/about'}  className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>About Us</Link>
+          <Link href={'/about'}  className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>About Us</Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/contact'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Contact Us</Link>
+          <Link href={'/contact'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Contact Us</Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -125,7 +126,6 @@ const ListItem = React.forwardRef<
       <NavigationMenuLink asChild>
         <a 
           ref={ref}
-          // scroll={false}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
@@ -133,8 +133,8 @@ const ListItem = React.forwardRef<
           href={props.href!}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
+          <div className="text-sm md:text-base font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-xs md:text-sm leading-snug text-muted-foreground">
             {children}
           </p>
         </a>
