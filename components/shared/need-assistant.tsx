@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function NeedAssistant() {
   return (
     <div className='h-full flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto py-12 my-12'>
-      <h2 className=' text-2xl md:text-5xl font-bold '>Need our assistants?</h2>
+      <h2 className=' text-2xl md:text-5xl font-bold '>Need our assistance?</h2>
       <div className='flex gap-3 items-start'>
 
         <Link href={'https://www.instagram.com/secretweapontradingsolution'} className='p-2 rounded-full bg-white border shadow-sm group hover:bg-black transition-colors duration-300'><Instagram  className='h-4 w-4 lg:h-6 lg:w-6 text-neutral-600 group-hover:text-white'/></Link>

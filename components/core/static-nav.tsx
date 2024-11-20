@@ -54,15 +54,15 @@ const Products: { title: string; href: string; description: string }[] = [
   },
 ];
 
-export function StaticNav({ color }: any) {
+export function StaticNav({isDefault, color }: {isDefault?: boolean, color: string}) {
   return (
-    <NavigationMenu>
+    <NavigationMenu >
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href={'/'} className={`text-${color} hover:text-${color} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors`}>Home</Link>
+          <Link href={'/'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Home</Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-        <Link href={'/our-portfolio'} className={`text-${color} hover:text-${color} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors`}>Our Porfolio </Link>
+        <NavigationMenuItem >
+        <Link href={'/our-portfolio'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Our Porfolio </Link>
 
           {/* <NavigationMenuTrigger className={`text-${color} hover:text-${color}`}><Link href={'/our-portfolio'}>Our Porfolio</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -80,7 +80,7 @@ export function StaticNav({ color }: any) {
           </NavigationMenuContent> */}
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={`text-${color} hover:text-${color}`}><Link href={'/our-products'}>Our Products</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className={`text-${color}  hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'}`}><Link href={'/our-products'}>Our Products</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {Products.map((product) => (
@@ -103,13 +103,13 @@ export function StaticNav({ color }: any) {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/why-us'} className={`text-${color} hover:text-${color} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors`}>Why us</Link>
+          <Link href={'/why-us'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Why us</Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/about'}  className={`text-${color} hover:text-${color} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors`}>About Us</Link>
+          <Link href={'/about'}  className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>About Us</Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={'/contact'} className={`text-${color} hover:text-${color} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors`}>Contact Us</Link>
+          <Link href={'/contact'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base' : 'text-sm'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Contact Us</Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

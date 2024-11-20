@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-x-hidden">
-      <div className="h-full w-full min-h-[60vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
+      <div className="h-full w-full min-h-[50vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-4xl lg:text-6xl font-extrabold">
@@ -103,8 +103,8 @@ export default function AboutPage() {
             trade the market on their own.
           </h4>
         </div>
-        <div className="flex items-center justify-center  gap-8 max-w-6xl mt-8 flex-wrap  w-full">
-          <div className="max-w-[340px] bg-grad bg-neutral-100 rounded-3xl h-96 w-full overflow-hidden">
+        <div className="flex items-center justify-center gap-[74px] max-w-7xl mt-8 flex-wrap  w-full">
+          <div className="max-w-[360px] bg-grad bg-neutral-100 rounded-3xl h-96 w-full overflow-hidden">
             <div className="p-3 flex items-center px-4 py-6  gap-3 bg-black rounded-b-2xl overflow-hidden">
               <Handshake size={24} className=" text-white " />
               <h3 className="text-white font-semibold text-lg">

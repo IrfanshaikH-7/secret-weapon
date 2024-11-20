@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className='p-4 w-full h-full z-20 overflow-x-hidden max-w-[2546px] mx-auto'>
-       <section className="h-full w-full min-h-[60vh] relative flex  flex-col items-center justify-center  bg-black rounded-[40px]">
+       <section className="h-full w-full min-h-[50vh] relative flex  flex-col items-center justify-center  bg-black rounded-[40px]">
        {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[324px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" /> */}
 
         <div className="max-w-3xl flex flex-col items-center z-10">

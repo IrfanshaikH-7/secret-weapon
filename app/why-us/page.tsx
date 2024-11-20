@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="p-4 max-w-[2546px] mx-auto overflow-x-hidden">
-      <section className="h-full w-full min-h-[60vh] relative flex flex-col items-center justify-center  bg-black rounded-[40px]">
+      <section className="h-full w-full min-h-[50vh] relative flex flex-col items-center justify-center  bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[280px] lg:w-[280px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[324px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" /> */}
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-3xl sm:text-4xl lg:text-6xl font-extrabold">
@@ -65,13 +65,13 @@ export default function page() {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] mt-8">
+      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1284px] mx-auto aspect-video mt-8">
         <Image
           src="/why-us/data-flow-white-final.png" // replace with your image path
           alt="Description of the image"
           layout="fill" // Makes the image fill the container
-          objectFit="contain" // Ensures the image fits within the container without being cut off
-          className="rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          // objectFit="contain" // Ensures the image fits within the container without being cut off
+          className="rounded-lg w-full h-full transition-transform duration-300 ease-in-out "
         />
       </div>
 
@@ -94,14 +94,14 @@ export default function page() {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full max-w-screen-3xl mx-auto h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] mt-8">
+      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1256px] mx-auto aspect-square mt-8">
         <div className="relative w-full h-full">
           <Image
             src="/why-us/comparison-final-2.png" // replace with your image path
             alt="Description of the image"
             layout="fill" // Makes the image fill the container
-            objectFit="contain" // Ensures the image fits within the container without cropping
-            className="rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+            // objectFit="contain" // Ensures the image fits within the container without cropping
+            className="rounded-lg transition-transform duration-300 ease-in-out"
           />
         </div>
       </div>
