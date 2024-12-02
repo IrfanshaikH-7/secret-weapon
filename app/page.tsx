@@ -8,7 +8,7 @@ import NeedAssistant from "@/components/shared/need-assistant";
 import PointSection from "@/components/shared/pointSection";
 import ProductSection from "@/components/shared/ProductSection";
 import {  Testimonials } from "@/components/shared/Testimonials";
-import {  ArrowRight, ChevronDown, Facebook, Instagram, LinkedinIcon, MessageCircleIcon, PhoneOutgoing } from "lucide-react";
+import {  ArrowRight, Facebook, Instagram, LinkedinIcon, MessageCircleIcon, PhoneOutgoing } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from 'next';
@@ -35,7 +35,7 @@ export default function Home() {
     <div className="h-full w-full relative flex flex-col justify-between gap-8 md:gap-0 overflow-hidden bg-black rounded-[40px]">
       <ImageOverlay />
       <div className="h-full w-full flex flex-col justify-between gap-32 items-start pl-0 pr-8 md:pl-8 py-4 pt-32 md:pt-2 z-30 bg-black/60">
-      <div className="flex flex-col justify-between w-full gap-32 pl-0 px-8  py-4  mx-4 pt-32 md:pt-2">
+      <div className="flex flex-col justify-between w-full gap-20 pl-0 px-8  py-4  mx-4 pt-32 md:pt-0">
     <nav className=" hidden md:flex justify-between items-center w-full ">
      <Image
      src="/logo.png"
@@ -47,8 +47,8 @@ export default function Home() {
 
     </nav>
     <div className="flex h-fit items-center -mt-8 md:mt-0">
-      <div className="w-full md:max-w-2xl space-y-4">
-          <h1 className="text-white text-4xl md:text-7xl font-bold ">The Future of Automated Trading is Here</h1>
+      <div className="w-full md:max-w-2xl space-y-4 ">
+          <h1 className="text-white text-4xl md:text-6xl font-bold ">The Future of Automated Trading is Here</h1>
           <h4 className="text-white text-sm md:text-2xl">We Have Developed and Automated More
           Than 1000 Strategies
           </h4>
@@ -59,12 +59,9 @@ export default function Home() {
     </div>
       </div>
     <HeroFooter />
-     
       </div>
-   
-    
-    
     </div>
+
     <div className="w-full flex justify-center  items-center gap-4 mt-3 mx-auto">
       <Link href={'https://www.instagram.com/secretweapontradingsolution/'} target="_blank" className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Instagram /></Link>
       <Link href={'https://www.facebook.com/secretweaponts/'} target="_blank" className="p-2 bg-black text-white rounded-lg hover:bg-black/80 transition-all duration-300 block md:hidden"><Facebook /></Link>
@@ -118,7 +115,7 @@ export default function Home() {
 
   </div>
 
-  <div className="flex items-center justify-center overflow-x-hidden">
+  <div className="flex items-center w-full  justify-center overflow-x-hidden">
 
   <Testimonials />
   </div>

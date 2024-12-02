@@ -6,8 +6,9 @@ import React from 'react'
 export default function Footer() {
   return (
     
+<footer className='p-4'>
 
-<footer className="flex flex-col bg-black rounded-[40px] shadow m-4 pb-4 max-w-[1560px] mx-auto">
+<section className="flex flex-col bg-black rounded-[40px] shadow  max-w-[2560px] mx-auto">
     <section className='flex flex-col md:flex-row items-center justify-start  gap-4 lg:gap-12 px-4 sm:px-8 py-16'>
     <article className='flex flex-col gap-4 lg:gap-4 w-full max-w-full md:max-w-52 lg:max-w-72 px-8 py-16 justify-center items-center bg-white rounded-3xl'>
     <div className="flex items-center relative h-16 w-48 ">
@@ -91,7 +92,9 @@ export default function Footer() {
     <h3 className='text-xs font-semibold text-neutral-400 text-center'>Copyright © 2024 SecretWeapon, All Rights Reserved.</h3>
     <p className='text-xs font-semibold text-neutral-400'>Powered by team Nextech</p>
   </div>
+</section>
 </footer>
+
 
   )
 }

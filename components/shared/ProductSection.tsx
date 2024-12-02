@@ -78,7 +78,7 @@ export default function ProductSection() {
             duration: 1,
             staggerChildren: 0.1,
           }}
-          className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12 w-full max-w-full md:w-[90%] justify-items-center  p-4 mx-auto'
+          className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12 w-full max-w-full md:w-[92%] justify-items-center  p-4 mx-auto'
         >
           {products.map((product, index) => (
             <motion.div

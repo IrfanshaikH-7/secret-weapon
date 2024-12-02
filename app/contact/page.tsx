@@ -19,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2, LocateIcon, Mail, Phone } from "lucide-react";
 import { toast } from "sonner";
+import { StaticNav } from "@/components/core/static-nav";
 
 const FormSchema = z.object({
   name: z.string(),
@@ -74,7 +75,10 @@ export default function ContactPage() {
     <main className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-hidden">
       <section className="h-full w-full min-h-[50vh] relative flex  flex-col items-center justify-center  bg-black rounded-[40px] over">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[324px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" /> */}
+      <div className='absolute top-10 right-12'>
+        <StaticNav color={'white'} />
 
+       </div>
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-4xl lg:text-6xl font-extrabold">
             Contact secret weapon

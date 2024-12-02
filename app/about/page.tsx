@@ -1,11 +1,10 @@
-import CallToAction from "@/components/shared/CallToAction";
 import ContentSection from "@/components/shared/ContentSection";
 import NeedAssistant from "@/components/shared/need-assistant";
 import { Testimonials } from "@/components/shared/Testimonials";
-import { Baby, ChartArea, Handshake, Lightbulb } from "lucide-react";
-import Image from "next/image";
+import { Baby, Handshake, Lightbulb } from "lucide-react";
 import React from "react";
 import type { Metadata } from 'next';
+import { StaticNav } from "@/components/core/static-nav";
 export const metadata: Metadata = {
   title: "About Secret Weapon | Algorithmic Trading Experts",
   description:
@@ -21,12 +20,16 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-x-hidden">
+    <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-x-hidden ">
       <div className="h-full w-full min-h-[50vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
+      <div className='absolute top-10 right-12'>
+        <StaticNav color={'white'} />
+
+       </div>
         <div className="max-w-3xl flex flex-col items-center z-10">
           <h2 className="text-white text-center text-4xl lg:text-6xl font-extrabold">
-            About secret weapon
+            About Secret Weapon
           </h2>
           <p className="text-neutral-300 text-center mt-4 text-xs md:text-xl leading-snug px-4 ">
             With over a decade of trading experience and three years in the
@@ -103,7 +106,7 @@ export default function AboutPage() {
             trade the market on their own.
           </h4>
         </div>
-        <div className="flex items-center justify-center gap-[74px] max-w-7xl mt-8 flex-wrap  w-full">
+        <div className="flex items-center justify-center gap-[120px] max-w-[1340px] mt-8 flex-wrap  w-full">
           <div className="max-w-[360px] bg-grad bg-neutral-100 rounded-3xl h-96 w-full overflow-hidden">
             <div className="p-3 flex items-center px-4 py-6  gap-3 bg-black rounded-b-2xl overflow-hidden">
               <Handshake size={24} className=" text-white " />
@@ -152,7 +155,9 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="flex items-center max-w-[2560px] mx-auto justify-center overflow-x-hidden">
       <Testimonials />
+      </div>
       <NeedAssistant />
     </section>
   );

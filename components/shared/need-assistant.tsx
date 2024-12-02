@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function NeedAssistant() {
   return (
-    <div className='h-full flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto py-12 my-12'>
+    <div className='h-full flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto py-6 my-12'>
       <h2 className=' text-2xl md:text-5xl font-bold '>Need our assistance?</h2>
       <div className='flex gap-3 items-start'>
 

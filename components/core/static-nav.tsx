@@ -56,7 +56,7 @@ const Products: { title: string; href: string; description: string }[] = [
 
 export function StaticNav({isDefault, color }: {isDefault?: boolean, color: string}) {
   return (
-    <NavigationMenu >
+    <NavigationMenu className="z-[9999999999]" >
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href={'/'} className={`text-${color} hover:text-${color} ${isDefault ? 'text-base md:text-base 2xl:text-lg' : 'text-sm md:text-base'} inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  font-medium transition-colors`}>Home</Link>

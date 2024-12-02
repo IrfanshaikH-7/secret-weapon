@@ -21,7 +21,7 @@ export default function FloatingNavWrapper({
     if (pathname === "/") {
       setPageType("front");
     } else {
-      setPageType("other");
+      setPageType("front");
     }
   }, [pathname]);
 
