@@ -1,38 +1,41 @@
+'use client'
+import React, { useEffect, useState } from 'react';
 import ContentSection from "@/components/shared/ContentSection";
 import NeedAssistant from "@/components/shared/need-assistant";
 import { Testimonials } from "@/components/shared/Testimonials";
 import { Baby, Handshake, Lightbulb } from "lucide-react";
-import React from "react";
-import type { Metadata } from 'next';
 import { StaticNav } from "@/components/core/static-nav";
-export const metadata: Metadata = {
-  title: "About Secret Weapon | Algorithmic Trading Experts",
-  description:
-    "Learn about Secret Weapon, the innovators behind cutting-edge algorithmic trading solutions with Python and AI technology.",
-  keywords: [
-    "About Secret Weapon",
-    "algorithmic trading expertise",
-    "AI-powered trading tools",
-    "Python trading solutions",
-    "trading strategy experts",
-  ],
-};
 
 export default function AboutPage() {
+  const [isWideScreen, setIsWideScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 1024);
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <section className="h-full flex flex-col gap-12  w-full mt-4 md:mt-0 relative overflow-x-hidden ">
+    <section className={`h-full flex flex-col gap-12 w-full mt-4 md:mt-0 relative overflow-x-hidden `}>
       <section className="h-full w-full p-4">
-      <div className="h-full w-full min-h-[50vh] relative flex flex-col items-center justify-center p-2 bg-black rounded-[40px]">
+      <div className="h-full w-full min-h-80 relative flex flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
-      <div className='absolute top-10 right-12'>
+      <div className='absolute top-4 right-12'>
         <StaticNav color={'white'} />
 
        </div>
         <div className="max-w-3xl flex flex-col items-center z-10">
-          <h2 className="text-white text-center text-4xl lg:text-6xl font-extrabold">
+          <h2 className="text-white text-center text-4xl lg:text-5xl font-extrabold">
             About Secret Weapon
           </h2>
-          <p className="text-neutral-300 text-center mt-4 text-xs md:text-xl leading-snug px-4 ">
+          <p className="text-neutral-300 text-center mt-4 text-xs md:text-lg leading-snug px-4 ">
             With over a decade of trading experience and three years in the
             industry, our expert team specializes in developing and implementing
             innovative trading strategies using platforms like AmiBroker and
@@ -73,6 +76,8 @@ export default function AboutPage() {
           </p>
         </article>
       </div> */}
+      <div className={`pb-20 relative h-fit ${isWideScreen ? 'shapedividers_com-7328' : ''}`}>
+
       <ContentSection
       isSeparated={true}
         content="right"
@@ -85,7 +90,10 @@ export default function AboutPage() {
           " Ultimately, the mission is to deliver innovative algo solutions that not only meet, but exceed the expectations of clients and contribute to their success in the trading world.",
         ]}
       />
-      <div className="-mt-20">
+     
+      </div>
+     
+      <div className="pb-20 -mt-28 pt-20 lg:pt-0 relative h-fit shapedividers_com-2914">
        <ContentSection
         content="left"
         title="Providing a competitive edge through algorithmic trading"
@@ -97,7 +105,7 @@ export default function AboutPage() {
       />
       </div>
      
-      <section className="h-full w-full flex flex-col items-center justify-center">
+      <section className="h-full p-4 w-full flex flex-col items-center justify-center">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-black text-center text-4xl  font-extrabold">
             Algo trading will help you if you are
@@ -159,9 +167,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="flex items-center px-4 max-w-[1700px] mx-auto justify-center overflow-x-hidden">
-      <Testimonials />
-      </div>
+      
+      <div className="flex items-center w-full max-w-[1450px] mx-auto justify-center overflow-x-hidden">
+
+  <Testimonials />
+  </div>
       <NeedAssistant />
     </section>
   );

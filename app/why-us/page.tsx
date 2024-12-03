@@ -20,25 +20,28 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="p-4 max-w-[2546px] mx-auto overflow-x-hidden">
-      <section className="h-full w-full min-h-[50vh] relative flex flex-col items-center justify-center  bg-black rounded-[40px]">
+    <div className=" max-w-[2546px] mx-auto overflow-x-hidden">
+      <section className="p-4">
+      <section className="h-full w-full min-h-80 relative flex flex-col items-center justify-center  bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[280px] lg:w-[280px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[324px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" /> */}
-      <div className='absolute top-10 right-12'>
+      <div className='absolute top-4 right-12 hidden md:block'>
         <StaticNav color={'white'} />
 
        </div>
         <div className="max-w-3xl flex flex-col items-center z-10">
-          <h2 className="text-white text-center text-3xl sm:text-4xl lg:text-6xl font-extrabold">
+          <h2 className="text-white text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold">
             Why Us
           </h2>
-          <p className="text-neutral-300 text-center mt-4 text-xs md:text-xl leading-snug px-4 max-w-lg">
+          <p className="text-neutral-300 text-center mt-4 text-xs md:text-lg leading-snug px-4 max-w-lg">
             Begin your journey with us – reach out and let’s create something
             extraordinary together!
           </p>
         </div>
       </section>
-
-      <ContentSection
+      </section>
+      
+<div className="pb-24 shapedividers_com-7328 px-4 ">
+<ContentSection
         content="left"
         title={"Hello Traders"}
         descriptions={[
@@ -48,7 +51,9 @@ export default function page() {
         image={"/why-us/why-us.webp"}
         button={"Read More"}
       />
-
+</div>
+  
+  <div className=" pb-24 shapedividers_com-2914 px-4 ">
       <div className="px-4 md:px-4 xl:px-0  space-y-4 max-w-[1310px] mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           Our process
@@ -79,8 +84,10 @@ export default function page() {
           className="rounded-lg w-full h-full transition-transform duration-300 ease-in-out "
         />
       </div>
+  </div>
+    
 
-      <div className="px-4 md:px-4 xl:px-0  pt-5   space-y-4 max-w-[1310px] mx-auto">
+      <div className="px-8 md:px-4 xl:px-0  pt-5   space-y-4 max-w-[1310px] mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold ">
           What Makes Us Different
         </h1>
@@ -99,7 +106,7 @@ export default function page() {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1200px] mx-auto aspect-square mt-8">
+      <div className="relative px-4  w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1200px] mx-auto aspect-square mt-8">
         <div className="relative w-full h-full">
           <Image
             src="/why-us/comparison-final-2.png" // replace with your image path

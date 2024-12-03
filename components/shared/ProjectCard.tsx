@@ -89,7 +89,7 @@ export default function ProjectCard({
                 <Image
                     src={image}
                     alt="stock-pc-image"
-                    className="object-contain scale-75 -mt-8 absolute"
+                    className={`object-contain scale-75 -mt-8 absolute scroll-waves ${id === 'aD' || id === 'pineD' || id === 'pyD' ? '' : 'max-w-[70%]'} mx-auto`}
                     fill
                 />
                     <div className='absolute -bottom-6 min-[400px]:bottom-12 text-neutral-600 p-1 md:p-4 font-medium bg-white right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 w-full min-[400px]:w-[80%] rounded-3xl   border-4 h-[40%] min-[400px]:h-[20%] bg-transparent'>

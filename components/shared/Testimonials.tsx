@@ -18,25 +18,25 @@ export function Testimonials() {
   const testimonials = [
     {
       name: "Himanshu Sharma",
-      image: "/user-testmonial.jpg",
+      image: "/testiface.jpg",
       testimony:
         "I approached Secret Weapons Trading Solutions for backtesting services and was thoroughly impressed with their meticulous approach and insightful analysis. The team worked great to refine my trading strategies exponentially Communication was seamless, and the overall experience was exceptionally professional. I would highly recommend their services to anyone looking to enhance their trading strategies with robust backtesting solutions.",
     },
     {
       name: "Digvijay",
-      image: "/user-testmonial.jpg",
+      image: "/testiface.jpg",
       testimony:
         "This is honest feedback on my interaction with Swapnil on creating a customized pine script code.   From the very beginning, it was dealt with very professionally and meetings were scheduled well in advance.  He was open for many rounds of calls and iterations on the code and was open for changes/modifications at any point of time and understood the complete cycle, as he also has the trading experience that made things very easy.   Very accommodating and ready to incorporate any changes requested even after the code was delivered.    I am looking forward to working with him on my future ideas--cheers",
     },
     {
       name: "Bhaskar Karampudi",
-      image: "/user-testmonial.jpg",
+      image: "/testiface.jpg",
       testimony:
         "As a service provider, Secret Weapon Trading Solutions excels.           They demonstrate commendable expertise in Amibroker and AFL, comprehending specifications thoroughly and exerting full effort to meet project requirements. I'll certainly enlist their services again and highly recommend them to others!",
     },
     {
       name: "Sangeetha Narasimhan",
-      image: "/secret-3.png",
+      image: "/testiface.jpg",
       testimony:
         "If you're in need of a coding solution that precisely matches your requirements, Secret  Weapon Trading Solutions is the go-to choice. They possess an extensive understanding of coding nuances and conduct their work with utmost  professionalism. Engaging Secret Weapon Trading Solutions for future projects is a clear decision. Their pricing is reasonable, and they readily accommodate changes while offering optimization suggestions. Overall, their work ethic and responsiveness leave me extremely satisfied Hide",
     },
