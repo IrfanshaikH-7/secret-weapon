@@ -10,7 +10,7 @@ export default function page() {
        
       <section className="h-full w-full min-h-80 relative flex  flex-col items-center justify-center  bg-black rounded-[40px]">
         {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[324px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-20 border-yellow-300 absolute rotate-45" /> */}
-       <div className='absolute top-4 right-12'>
+       <div className='absolute top-4 right-12 hidden md:block'>
         <StaticNav color={'white'} />
 
        </div>

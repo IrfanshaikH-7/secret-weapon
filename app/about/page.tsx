@@ -23,11 +23,11 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <section className={`h-full flex flex-col gap-12 w-full mt-4 max-w-[2546px] mx-auto  md:mt-0 relative overflow-x-hidden `}>
+    <section className={`h-full flex flex-col gap-12 w-full  max-w-[2546px] mx-auto  md:mt-0 relative overflow-x-hidden `}>
       <section className="h-full w-full p-4">
       <div className="h-full w-full min-h-80 relative flex flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
-      <div className='absolute top-4 right-12'>
+      <div className='absolute top-4 right-12 hidden md:block'>
         <StaticNav color={'white'} />
 
        </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
           </p>
         </article>
       </div> */}
-      <div className={`pb-20 relative h-fit ${isWideScreen ? 'shapedividers_com-7328' : ''}`}>
+      <div className={`pb-28 relative h-fit ${isWideScreen ? 'shapedividers_com-7328' : ''}`}>
 
       <ContentSection
       isSeparated={true}
@@ -93,7 +93,7 @@ export default function AboutPage() {
      
       </div>
      
-      <div className="pb-20 -mt-28 pt-20 lg:pt-0 relative h-fit shapedividers_com-2914">
+      <div className="pb-16 -mt-28 pt-20 lg:pt-0 relative h-fit shapedividers_com-2914">
        <ContentSection
         content="left"
         title="Providing a competitive edge through algorithmic trading"
