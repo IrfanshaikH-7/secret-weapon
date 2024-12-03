@@ -49,7 +49,7 @@ export default function page() {
         button={"Read More"}
       />
 
-      <div className="px-4 md:px-4 xl:px-12  space-y-4 max-w-[1310px] mx-auto">
+      <div className="px-4 md:px-4 xl:px-0  space-y-4 max-w-[1310px] mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           Our process
         </h1>
@@ -70,7 +70,7 @@ export default function page() {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1284px] mx-auto aspect-video mt-8">
+      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1380px] mx-auto aspect-video mt-8">
         <Image
           src="/why-us/data-flow-white-final.png" // replace with your image path
           alt="Description of the image"
@@ -80,7 +80,7 @@ export default function page() {
         />
       </div>
 
-      <div className="px-4 md:px-4 xl:px-12  pt-5   space-y-4 max-w-[1310px] mx-auto">
+      <div className="px-4 md:px-4 xl:px-0  pt-5   space-y-4 max-w-[1310px] mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold ">
           What Makes Us Different
         </h1>
@@ -99,7 +99,7 @@ export default function page() {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1256px] mx-auto aspect-square mt-8">
+      <div className="relative w-full h-[400px]  sm:h-[500px] md:h-[600px] lg:h-full max-w-[1200px] mx-auto aspect-square mt-8">
         <div className="relative w-full h-full">
           <Image
             src="/why-us/comparison-final-2.png" // replace with your image path

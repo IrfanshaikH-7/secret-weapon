@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="h-full flex flex-col gap-12 p-4 w-full mt-4 md:mt-0 relative overflow-x-hidden ">
-      <div className="h-full w-full min-h-[50vh] relative flex  flex-col items-center justify-center p-2 bg-black rounded-[40px]">
+    <section className="h-full flex flex-col gap-12  w-full mt-4 md:mt-0 relative overflow-x-hidden ">
+      <section className="h-full w-full p-4">
+      <div className="h-full w-full min-h-[50vh] relative flex flex-col items-center justify-center p-2 bg-black rounded-[40px]">
       {/* <span className="h-40 w-40 lg:h-[300px] lg:w-[300px] bg-transparent pointer-events-none border-[6px] md:border-[12px]  rounded-[40px] top-[354px] md:top-80 lg:top-40 z-20 -right-10 md:right-5 lg:right-10 border-yellow-300 absolute rotate-45" /> */}
       <div className='absolute top-10 right-12'>
         <StaticNav color={'white'} />
@@ -40,6 +41,8 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+      </section>
+      
       {/* <div className="relative mt-12 ">
       <div className="absolute h-24 w-24 rounded-xl  custom-bounce top-60 xl:left-48 left-32 hidden lg:flex">
           <div className="h-3 w-3 bg-slate-400 rounded-full absolute -top-4 -left-4"/>
@@ -71,6 +74,7 @@ export default function AboutPage() {
         </article>
       </div> */}
       <ContentSection
+      isSeparated={true}
         content="right"
         SuperTitle="Our Vision"
         title="Revolutionizing Trading through Innovative Algo Solutions"
@@ -155,7 +159,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="flex items-center max-w-[2560px] mx-auto justify-center overflow-x-hidden">
+      <div className="flex items-center px-4 max-w-[1700px] mx-auto justify-center overflow-x-hidden">
       <Testimonials />
       </div>
       <NeedAssistant />

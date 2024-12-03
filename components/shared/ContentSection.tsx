@@ -12,6 +12,7 @@ type contentSectionType = {
   button?: string,
   content?: 'left' | 'right'
   listItems?: []
+  isSeparated?: boolean
 }
 export default function ContentSection({
   SuperTitle,
@@ -21,11 +22,12 @@ export default function ContentSection({
   image,
   button,
   content,
+  isSeparated
 }: contentSectionType) {  
   const isArray = Array.isArray(descriptions);
   const descriptionList = isArray ? descriptions : [descriptions];
   return (  
-    <div className="h-fit mt-4  w-full flex flex-col items-center justify-center gap-8 lg:gap-20 md:flex-row mx-auto overflow-hidden ">  
+    <div className="h-fit mt-4 px-4 bg-slate-200 w-full flex flex-col items-center justify-center gap-8 lg:gap-20 md:flex-row mx-auto overflow-hidden ">  
       {
         content !== 'right'  && (
           <motion.article  
