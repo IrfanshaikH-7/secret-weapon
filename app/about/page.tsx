@@ -36,11 +36,12 @@ export default function AboutPage() {
             About Secret Weapon
           </h2>
           <p className="text-neutral-300 text-center mt-4 text-xs md:text-lg leading-snug px-4 ">
-            With over a decade of trading experience and three years in the
+            {/* With over a decade of trading experience and three years in the
             industry, our expert team specializes in developing and implementing
             innovative trading strategies using platforms like AmiBroker and
             TradingView, dedicated to delivering the most effective solutions to
-            our clients.
+            our clients. */}
+            With over a decade in trading and three years in the industry, specializes in innovative strategies using AmiBroker and TradingView, ensuring effective solutions.
           </p>
         </div>
       </div>
