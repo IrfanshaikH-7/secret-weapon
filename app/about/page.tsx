@@ -168,7 +168,7 @@ export default function AboutPage() {
       </section>
 
       
-      <div className="flex items-center w-full max-w-[1450px] mx-auto justify-center overflow-x-hidden">
+      <div className="flex items-center p-4 w-full max-w-[1450px] mx-auto justify-center overflow-x-hidden">
 
   <Testimonials />
   </div>
